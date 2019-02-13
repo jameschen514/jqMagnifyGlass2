@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<title>CSS Cursor Test Page</title>
+
+<style type="text/css">
+div
+{
+	 font-size:x-large;
+	 margin:10px;
+}
+#cur16
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/16px.cur),auto;
+}
+
+#cur20
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/20px.cur),auto;
+}
+
+#cur20x40
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/20x40px.cur),auto;
+}
+
+
+#cur32
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/32px.cur),auto;
+}
+
+
+#cur64
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/64px.cur),auto;
+}
+
+#cur128
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/128px.cur),auto;
+}
+
+#cur256
+{
+	cursor:url(http://www.debugtheweb.com/test/cursors/256px.cur),auto;
+}
+
+/*
+@supports (-ms-ime-align:auto){
+	.cur:hover {
+		cursor: url("mouse-cursor.cur"), pointer;
+	}
+}
+*/
+
+.cur {
+		cursor: url(mouse-cursor3.cur), pointer;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<p>Test page for CSS Custom cursors. See my
+<a href="http://blogs.msdn.com/ieinternals/archive/2010/04/27/Custom-CSS-cursors-are-always-scaled-to-32x32-in-Internet-Explorer.aspx">
+IEInternals blog post</a> on this topic.</p>
+<p>&nbsp;</p>
+<div id="cur16">This text uses a 16x16 cursor.<br />
+</div>
+
+<div id="cur20">This text uses a 20x20 cursor.<br />
+</div>
+
+<div id="cur20x40">This text uses a 20x40 cursor.<br />
+</div>
+
+<div id="cur32">This text uses a 32x32 cursor.<br />
+</div>
+
+<div id="cur64">This text uses a 64x64 cursor.<br />
+</div>
+<div id="cur128">This text uses a 128x128 cursor.<br />
+</div>
+<div id="cur256">This text uses a 256x256 cursor.</div>
+
+<div class="cur" style="width:500px; height:500px; background: #0000ff; ">
+
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>
